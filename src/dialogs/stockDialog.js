@@ -31,6 +31,7 @@ class StockDialog extends Component {
 			this.stockInput.current.value,
 			this.sharesInput.current.value
 		);
+		this.handleClose();
 	}
 
 	render() {
