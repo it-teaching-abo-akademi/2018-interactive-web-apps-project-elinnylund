@@ -1,32 +1,84 @@
 .App {
-  text-align: center;
+	padding: 40px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.portfolio-grid {
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+	height: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.Portfolio {
+	border: solid darkgray;
+	padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.portfolio-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
 }
+
+.display-block {
+	display: block;
+}
+
+.display-none {
+	display: none;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+}
+
+.portfolio-name {
+	font-size: 1.5rem;
+}
+
+.ReactTable {
+	max-height: 200px;
+}
+
+
+.graph-container {
+	display: flex;
+}
+
+.stock-select {
+	display: flex;
+	width: 100px;
+}
+
+.ui-dialog {
+	top: 30%;
+}
+ .chart-container {
+	 width: 650px;
+ }
+
+ .symbols-list {
+	 max-height: 300px;
+	 overflow-y: scroll;
+ }
+
+ .date-selectors {
+	 display: flex;
+	 justify-content: space-evenly;
+ }
+
+ .stock-input {
+	 margin:20px;
+ }
+
+ @media (max-width: 1200px) {
+	.portfolio-grid {
+		grid-template-columns: auto;
+	}
+ }
